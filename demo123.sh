@@ -13,3 +13,4 @@ echo length $height
 sudo apt-get update
 sudo touch /root/demo123/demo.html
 echo $demo.html
+sudo rm -rf /root/demo123/demo.html
