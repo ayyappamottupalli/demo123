@@ -11,5 +11,5 @@ echo value $VALUE
 echo qualification $education
 echo length $height
 sudo apt-get update
-sudo top
-echo $top
+sudo touch /root/demo123/demo.html
+echo $demo.html
