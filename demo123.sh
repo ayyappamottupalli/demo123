@@ -10,6 +10,6 @@ echo my name is $name
 echo value $VALUE
 echo qualification $education
 echo length $height
-apt-get update
-top
+sudo apt-get update
+sudo top
 echo $top
