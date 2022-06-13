@@ -1,0 +1,22 @@
+pipeline{
+    agent {label 'node1'}
+stages{
+    stage("Git code clone"){
+    steps{
+        git 'https://github.com/nagendrak596/demo123.git'
+        
+    }
+    }
+    stage("Build stage"){
+        steps
+        {
+            sh 'mvn clean install'
+        }
+    }
+    stage("Deploy"){
+        steps{
+            sh 'cp /opt/node1/workspace/demo_pipeline/target/demo123.war /var/lib/tomcat8/webapps/'
+    }
+    } 
+}
+}
